@@ -1,0 +1,14 @@
+﻿@using WebApplication2.Models
+@using WebApplication2.Models.ViewModels
+@model Registre
+@{
+    Layout = "_Layout";
+}
+<h1>Registre</h1>
+<p>La personne : @Model.Personne.Id @Model.Personne.Nom possède les armes suivantes :</p>
+<ul>
+    @foreach(Arme arme in Model.Armes)
+    {
+        <li>@arme.Id @arme.Nom</li>
+    }
+</ul>

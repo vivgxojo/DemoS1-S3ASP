@@ -1,0 +1,8 @@
+﻿@using WebApplication2.Models;
+<h1>Les armes</h1>
+<ul>
+    @foreach (Arme arme in ViewBag.ListeArmes as List<Arme>)
+    {
+        <li>@arme.Id @arme.Nom</li>
+    }
+</ul>

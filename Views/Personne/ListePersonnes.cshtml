@@ -1,0 +1,10 @@
+﻿@using WebApplication2.Models
+@model IEnumerable<Personne>    // Représente une liste de personnes
+
+<h1>Personne</h1>
+<ul>
+    @foreach(Personne p in Model)
+    {        
+        <li>@p.Id @p.Nom</li>
+    }
+</ul>
